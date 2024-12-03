@@ -1,17 +1,23 @@
 Dynamic Memory Allocator Project
 Overview
+
 This project involves building a dynamic storage allocator for C programs, implementing custom versions of the malloc, free, and realloc functions. The goal is to create an allocator that is efficient, fast, and reliable while adhering to strict design and testing requirements.
+
 
 As part of this project, I wrote a heap consistency checker to ensure the correctness and integrity of the heap. This tool serves as a debugging aid to identify and resolve potential issues in the allocator implementation.
 
+
 The code I developed is in mm.c, where I implemented five key functions: mm_init, malloc, free, realloc, and mm_checkheap. To structure the code efficiently, I added helper functions and defined structures as needed, maintaining modularity and clarity throughout.
+
 
 Function Descriptions
 1. Initialization (mm_init)
 This function sets up the memory allocator by performing any necessary initialization, like creating the initial heap area. It’s called before any other allocator function and ensures the allocator is ready to handle allocation requests.
 
-2. Allocation (malloc)
+
+3. Allocation (malloc)
 The malloc function returns a pointer to a block of memory with a payload of at least size bytes. It guarantees:
+
 
 The block lies within the heap boundary.
 The pointer is aligned to 16 bytes for compatibility.
