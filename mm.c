@@ -3,7 +3,7 @@
  *
  * Name: Trent Seidel
  *
-* Thid project implements a dynamic memory allocator, which from my design was by using a segregated list, however the code I need to sumbit will just show the explicit list. The allocator is desighned to provide efficiant memory allocation and freeing for varios types of memeory requests. It does this by usiing mechinisms like heap initialazation, dynamic extension, block coalescing which reduces fragmentation and both allocation and deallocation are optimised using best fit.he design emphasizes minimizing fragmentation and improving allocation efficiency by categorizing free blocks into size-specific lists and ensuring heap integrity through consistency checks. 
+* Thid project implements a dynamic memory allocator, which from my design was by using a segregated list, The allocator is desighned to provide efficiant memory allocation and freeing for varios types of memeory requests. It does this by usiing mechinisms like heap initialazation, dynamic extension, block coalescing which reduces fragmentation and both allocation and deallocation are optimised using best fit.he design emphasizes minimizing fragmentation and improving allocation efficiency by categorizing free blocks into size-specific lists and ensuring heap integrity through consistency checks. 
  */
 #include <assert.h>
 #include <stdlib.h>
@@ -17,9 +17,7 @@
 #include "memlib.h"
 
 /*
- * If you want to enable your debugging output and heap checker code,
- * uncomment the following line. Be sure not to have debugging enabled
- * in your final submission.
+ *
  */
 // #define DEBUG
 
